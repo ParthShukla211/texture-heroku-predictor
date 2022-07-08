@@ -25,5 +25,5 @@ Clay = st.number_input('Clay')
 if st.button('Predict Coarse'):
       input=pd.DataFrame({'Sand':[Sand],'Silt':[Silt],'cacl2ph':[cacl2ph],'h2oph':[h2oph],'EC':[EC],'OC':[OC],'CaCO3':[CaCO3],'P':[P],'N':[N],'K':[K],'Clay':[Clay]})
       result = pipe.predict(input)
-      st.success('THE Coarsity FOR GIVEN DATA WILL BE {}'.format(result))
+      st.success('THE COARSITY FOR GIVEN DATA WILL BE {}'.format(result))
 # st.header(result)
