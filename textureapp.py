@@ -22,7 +22,7 @@ Clay = st.number_input('Clay')
 
 
 # 'pH(CaCl2)':[pH(CaCl2)],'pH(H2O)':[pH(H2O)],
-if st.button('Predict Coarse'):
+if st.button('Predict'):
       input=pd.DataFrame({'Sand':[Sand],'Silt':[Silt],'cacl2ph':[cacl2ph],'h2oph':[h2oph],'EC':[EC],'OC':[OC],'CaCO3':[CaCO3],'P':[P],'N':[N],'K':[K],'Clay':[Clay]})
       result = pipe.predict(input)
       st.success('THE COARSITY FOR GIVEN DATA WILL BE {}'.format(result))
